@@ -7,6 +7,7 @@ echo "generating application key..."
 php artisan key:generate --show
 
 echo "Caching config..."
+php artisan config:clear
 php artisan config:cache
 
 echo "Caching routes..."
